@@ -24,7 +24,7 @@ public class MethodExecutionAspect {
             long durationNanos = System.nanoTime() - start;
             ExecutionTracker.logMethod(className, methodName);
             ExecutionTracker.logDuration(className + "." + methodName, durationNanos);
-            System.out.println("[Aspect] Executed " + className + "." + methodName + " in " + durationNanos + " ns");
+            System.out.println("[Aspect] Executed Test Case:" + className + "." + methodName + " in " + durationNanos + " ns");
         }
     }
 }
